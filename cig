@@ -1,0 +1,11 @@
+%r
+#x<-c(vc,seq(vc),max,0.01),vmax)
+cord.x<-c(1.16,seq(1.16,3,0.01),3)
+
+#y<-c(0,dnorm(seq(vc,max,0.01)),0)
+cord.y<-c(0,dnorm(seq(1.16,3,0.01)),0)
+
+#Dibujando la curva
+curve(dnorm(x,0,1),xlim=c(-3,3),main="Distribución normal")
+#Coloreando
+polygon(cord.x,cord.y,col="red")
